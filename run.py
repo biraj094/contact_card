@@ -5,6 +5,7 @@ from tempfile import NamedTemporaryFile
 # import Image
 from PIL import Image
 from flask import send_file
+from flask import Response
 
 app=Flask(__name__)
 
@@ -16,9 +17,15 @@ def index():
 def display():
     link=getdata()
     qrimage=qrfunc(link)
+
+    with NamedTemporaryFile(delete=True) as tmp:
+        qrimage.save(tmp.name)
+        str_io = io.BytesIO(tmp.read())
+    # trial = qr
+    # return Response(str_io.getvalue(), mimetype='image/png')
     # final= qrimage.show()
     # return render_template('display.html',qrimage=qrimage)
-    return render_template('display.html', link=link )
+    return render_template('display.html', link=link ,qrimage=str_io )
 
 @app.route('/download/<link>',methods=['POST','GET'])
 def download(link):
