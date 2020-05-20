@@ -15,16 +15,29 @@
                         </h1>    
                     </div>
             </section>
-            
 
         <br></br>
 
-        <div>
-            <img src="{{ url_for('download' ,link=link)}}"></img>
-            
-        </div>
+            <section>
+                <form method=POST action="{{url_for('download' ,link=link)}}">
+                    <input class="input is-primary" type="text" placeholder="File name" name="filename">
+                        <br><br>
+                    <button class="button is-light" name="download">Download</button>
+                </form>
+            </section>
 
-        <a href = "{{url_for('download' ,link=link)}}" >Download</a>
+
+        <section>
+            <h3> <a href = "{{url_for('download' ,link=link)}}"> Download</a></h3>
+        </section>
+           
+        <br></br>
+
+        <section>
+            <img src="{{ url_for('download' ,link=link)}}"></img>
+        </section>
+
+
 
   
 </body>
