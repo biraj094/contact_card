@@ -13,3 +13,11 @@
     width: 100%;
     height: 2.5rem;            /* Footer height */
   }
+
+  .barcode
+  {
+    /* padding-top: 13px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
