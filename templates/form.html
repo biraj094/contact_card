@@ -3,15 +3,22 @@
 <head>
 
     <title>Contact Card </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/main.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
+    <link rel="stylesheet" href= "{{ url_for('static', filename = 'fontawesome/css/all.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="{{ url_for('static', filename = 'fontawesome/js/all.js') }}"></script>
+
 
 <head>
 
 
 
     <body>
+        <div id="page-container">
 
+        <div id="content-wrap">
 
         <section class="hero is-primary">
             <div class="hero-body">
@@ -45,19 +52,23 @@
                 </div>
             </div>
         </section>
-
-
+        </div>
+         
+        
         <section>
-                <footer class="footer">
+                <footer class="footer" id="footer">
                         <div class="content has-text-centered">
-                          <p>
-                             @biraj094.github.io
-                           </p>
+
+                        <i class = "fab fa-github"></i> <a href= "https://github.com/biraj094">Github Profile</a>
+                        </br>
+                        <i class = "fab fa-linkedin"></i> <a href= "linkedin.com/in/biraj-koirala">Connect at LinkedIn</a>
+                        </br>
+                        <a href= "https://biraj094.github.io/">biraj094.github.io</a>
                         </div>
                       </footer>
         </section>
 
-
+    </div>
     </body>
 
 </html>
