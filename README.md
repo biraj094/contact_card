@@ -33,4 +33,5 @@ Inside your contact_card directory
     (env) $ pip install -r requirements.txt
 
 **Run the project**
+
     (contact_card) $ gunicorn --bind=0.0.0.0:5000 wsgi:app
