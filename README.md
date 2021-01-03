@@ -12,11 +12,11 @@ This project explores a single usecase of QR code - creating your contact inform
 
 **Make directory called contact_card.**
 
-    $ mkdir ap_reporting
+    $ mkdir contact_card
 
 `**cd**` **into contact_card**
 
-    $ cd ap_reporting
+    $ cd contact_card
 
 **Clone this repository.**
 
