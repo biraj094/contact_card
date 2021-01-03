@@ -164,3 +164,12 @@ dmypy.json
 .DS_Store
 
 # End of https://www.gitignore.io/api/flask,python
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
